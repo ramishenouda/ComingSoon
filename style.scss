@@ -1,0 +1,90 @@
+
+$color : rgb(241, 117, 117);
+
+body{
+    background-color: rgb(29, 29, 29);
+    color: white;
+    text-align: center;
+    padding-top: 6%;
+    font-family: 'Exo', 'sans-serif', 'Arial Narrow', Arial;
+
+    form{
+        padding-top: 80px;
+    }
+
+    %inputs{
+        background: transparent;
+        color: white;
+        font-family: 'Exo', 'sans-serif', 'Arial Narrow', Arial;
+        font-size: 18px;
+        outline: none;
+        text-align: center;
+    }
+
+    input[type=submit]{
+        @extend %inputs;
+        border: 2px solid $color;
+        padding: 15px 32px;
+        text-align: center;
+        border-radius: 50px;
+        font-weight: 700; 
+        transition-duration: 0.4s;
+    }
+
+    input[type=text]{
+        @extend %inputs;
+        border: none;
+        border-bottom: 1px solid $color;
+        width : 40%;
+        height: 8vh;
+        transition-duration: 0.4s;
+    }
+
+    input[type=submit]:hover{
+        background-color: $color;
+        color: black;
+    }
+    
+    input[type=text]:active{
+        border-bottom: 1px solid rgb(255, 255, 255);
+    }
+    
+    a{
+        text-decoration: none;
+    }
+
+    #domainlogo{
+        font-size: 28px;
+    }
+
+    #logo{
+        font-family: 'sans-serif', 'Arial Narrow', Arial;
+        font-weight: bold;
+        font-size: 60px;
+    }
+
+    #clock{
+        padding-top: 8vh;
+    }
+
+    .clockElement{
+        font-size: 32px;
+        padding-left: 40px;   
+    }
+
+
+    ::placeholder{
+        font-size: 18px;
+        color: rgba(255, 255, 255, 0.664);
+    }
+
+    #techcompanies{
+        padding-top : 3%;
+    }
+
+
+    .techcompanieslogo{
+        padding-left: 40px;
+        opacity: 0.9;
+    }
+}
