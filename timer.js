@@ -3,7 +3,7 @@ let interval;
 
 document.addEventListener('DOMContentLoaded', () =>
 {
-    CountDownDate = new Date("Jul 14, 2019 19:00:0").getTime();
+    CountDownDate = new Date("Jul 29, 2019 19:00:0").getTime();
     Timer();
     interval = setInterval(Timer, 1000);
 });
